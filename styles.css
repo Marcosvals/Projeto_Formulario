@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(50deg, #f87306, #ff0000);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: white;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+main h1{
+    font-weight: 550;
+    margin-bottom: 5%;
+    font-size: 30px;
+    background: linear-gradient(to left, #f80101f1, #dd7717fb);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+}
+
+main label{
+    display: flex;
+    font-style: initial;
+    font-weight: 600;
+    margin-bottom: 7px;
+    margin-top: 10px;
+
+}
+
+main input{
+    font-size: 0.9rem;
+    height: 25px;
+}
+
+main input[type="text"] {
+  height: 25px;
+  width: 20rem;  
+}
+
+form input[type="submit"]{
+    margin-top: 20px;
+    padding: 0.4rem;
+    width: 30%;
+    height: 30%;
+    border-radius: 4px;
+    color: white;
+    background: linear-gradient(to left, #f80101f1, #dd7717fb);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: 350;
+    cursor: pointer;
+}
+
+form button{
+    margin-top: auto;
+    margin-left: auto;
+    padding: 0.4rem;
+    width: 40%;
+    height: 30%;
+    border-radius: 4%;
+    color: white;
+    background: linear-gradient(to left, #f80101f1, #dd7717fb);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: 350;
+    cursor: pointer; 
+}
+
+.msgErro{
+    color: red;
+    font-weight: 300;
+}
+
+#msgIdade{
+    margin-top: 10px;
+    color: black;
+    font-weight: 500;
+}

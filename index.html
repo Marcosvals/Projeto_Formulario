@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1 id="titulo">Formulario</h1>
+        <div class="msgErro"> </div>
+        <form action="" class="main-form">
+
+            <div >
+                <label for="">Nome completo:</label>
+                <input id="nome" type="text" placeholder="Digite o nome completo" >
+            </div>
+
+            <div >
+                <label for="">Data de nascimento:</label>
+                <input id="data" type="date">
+            </div>
+
+            <div>
+                <label for="">Enderenço:</label>
+                <input id="enderenco" type="text" placeholder="Digite o seu endereço">
+            </div>
+
+            <div>
+                <label for="">Número:</label>
+                <input id="numero"  type="text" placeholder="Digite o número da casa ou apto">
+            </div>
+
+            <div>
+                <label for="">Bairro:</label>
+                <input id="bairro" type="text" placeholder="Digite o seu bairro">
+            </div>
+
+            <div>
+                <label for="">Cidade:</label>
+                <input id="cidade" type="text" placeholder="Digite o nome da cidade">
+            </div>
+
+            <div>
+                <label for="">Estado:</label>
+                <select name="estados-brasil">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">CEP:</label>
+                <input id="CEP" type="text" placeholder="Digite seu CEP">
+            </div>
+
+            <div>
+                <label for="">Apelido:</label>
+                <input id="Apelido" type="text" placeholder="Digite seu Apelido">
+            </div>
+
+            <div>
+                <label for="">CPF:</label>
+                 <input id="cpf" type="text" pattern="[0-9]{11}" placeholder="Digite seu CPF">
+            </div>
+
+            <div>
+                <label for="">RG:</label>
+                <input id="rg"  type="text" placeholder="Digite seu RG">
+            </div>
+
+            <div class="img-block">
+                <label for="">Foto</label>
+                <input type="file" id="photo-file" accept="image/png, image/jpeg">
+            </div>
+
+            <div id="msgIdade"></div>
+
+            <div>
+                <input id="Validar" value="Validar" type="submit">
+                <button id="Calcular">Calcular Idade</button>
+            </div>
+
+
+        </form>
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javaScript">
+
+        $("#cep").mask("00000-000");
+
+        $("#cpf").mask("000.000.000-00");
+
+        $("#rg").mask("000000000");
+
+    </script>
+
+</body>
+</html>
